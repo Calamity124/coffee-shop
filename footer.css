@@ -37,4 +37,13 @@
     width: 20px;
     height: 20px;
     background-color: white;
+
+}
+@media (max-width: 768px) {
+    .shop-details
+    {
+        gap: 10px;
+        
+        align-items: start;
+    }
 }
