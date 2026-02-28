@@ -1,0 +1,180 @@
+.contact-us-section
+{
+    margin-top: 130px;
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+}
+.main-section-left
+{
+    width: 50%;
+    border-right: 1px solid rgb(124, 121, 121);
+}
+.main-section-left h1{
+    font-size: 40px;
+    width: 50%;
+}
+.main-section-left p
+{
+    width: 55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(189, 186, 186) ;
+}
+.hear-from
+{
+    color: brown;
+}
+.inputs-section
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0;
+}
+.inputs-section label{
+    color: rgb(187, 180, 180);
+    font-size: 13px;
+}
+.inputs-section input
+{
+    height: 40px;
+    padding-left: 10px  ;
+    background-color: rgb(44, 43, 43);
+    color: rgb(189, 186, 186);
+    
+}
+.send-message
+{
+    width: 40%;
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.send-message:hover{
+     animation: pulse 0.8s infinite;
+}
+#message
+{
+    height: 100px;
+    padding-left: 6px;
+    background-color:  rgb(44, 43, 43);
+    color: rgb(189, 186, 186);
+}
+.main-section-right
+{
+   display: flex;
+   flex-direction: column;
+   padding-left: 30px;
+
+}
+.detail-section
+{
+    border: 1px solid rgb(135, 134, 134);
+    border-left: 3px solid brown;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+.detail-one
+{
+    border-bottom: 1px solid rgb(135, 134, 134) ;
+}
+.detail-two, .detail-three
+{
+    color: rgb(149, 147, 147);
+    font-size: 13px;
+}
+.follow-us-section
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.social-app
+{
+    width: auto;
+    padding: 5px 15px;
+    margin-left: 10px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    border: none;
+}
+.social-app:hover{
+      animation: pulse 0.8s infinite;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .contact-us-section {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .main-section-left {
+        width: 100%;
+        border-right: none;
+    }
+
+    .main-section-left h1 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .main-section-left p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .inputs-section {
+        width: 100%;
+    }
+
+    .inputs-section input,
+    #message {
+        width: 100%;
+    }
+
+    #message {
+        padding: 10px;
+    }
+
+    .main-section-right {
+        padding-left: 0;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .detail-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .follow-us-section {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-app {
+        margin-left: 0;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

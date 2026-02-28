@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.coffee-section
+{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+
+}
+.coffee-section-btns
+{
+    padding-left: 20px;
+    width: 40%;
+}
+
+.coffee-img
+{
+    width: 100px;
+    height: 100px;
+}
+.coffee-menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-top: 4px solid brown; 
+    padding: 10px;
+    flex: 1 1 300px;
+
+}
+.left-coffee-menu, .right-coffee-menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.left-coffee-menu p{
+    padding-top: 20px;
+}
+.left-prgph
+{
+    font-size: 13px;
+    width: 100px;
+    color: gray;
+}
+.right-coffee-menu button
+{
+    margin-top: 10px;
+}
+.add-to-cart-btn
+{
+    padding: 3px 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+}
+.left-price
+{
+    color: rgb(203, 13, 13);
+    font-size: 20px;
+}
+.cart-nav
+{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+.view-cart-btn
+{
+    padding: 15px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    transition: background-color 0.15s;
+}
+.view-cart-btn:hover{
+    background-color: rgb(39, 38, 38);
+}
+.add-to-cart-btn:hover{
+     animation: pulse 0.8s infinite;
+}
+.cart-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-content {
+    background: white;
+    color: black;
+    width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item button {
+    padding: 3px 8px;
+    margin: 0 3px;
+}
+
+.show-cart {
+    display: flex;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
