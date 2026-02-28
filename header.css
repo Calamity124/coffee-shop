@@ -147,6 +147,10 @@ a{
         top: 0;
         margin-left: 0;
     }
+    .title-header
+    {
+        width: 100%;
+    }
 
     .nav-bar {
         display: none; /* hide nav on mobile */
@@ -170,4 +174,5 @@ a{
 
     .menu-toggle {
         display: block;
+
     }}
