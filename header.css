@@ -152,6 +152,10 @@ a{
     {
         width: 100%;
     }
+     .head-section h2
+    {
+        padding-right: 20px;
+    }
 
     .nav-bar {
         display: none; /* hide nav on mobile */
@@ -177,6 +181,7 @@ a{
         display: block;
 
     }}
+
 
 
 
