@@ -146,7 +146,7 @@ a{
     .head-section {
         top: 0;
         margin-left: 0;
-        padding-left: 8px;
+        padding: 0 8px;
     }
     .title-header
     {
@@ -177,5 +177,6 @@ a{
         display: block;
 
     }}
+
 
 
